@@ -12,6 +12,7 @@ class SaleOrderLine(models.Model):
     )
 
     @api.model_create_multi
+    #testing
     def create(self, vals_list):
         for vals in vals_list:
             if vals.get('order_id'):
